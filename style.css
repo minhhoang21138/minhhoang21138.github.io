@@ -1,0 +1,13 @@
+/* style.css */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Times New Roman', serif; 
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 24px;
+}
