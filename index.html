@@ -1,48 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Thùng Rác Thông Minh</title>
-    <link rel="stylesheet" href="style.css"> </head>
-    <style>
-        <body>
-           margin: 0;
-            font-family: 'Times New Roman', serif;
-            background-image: url('hinh1.jpg'); /* Thay thế 'your_image.jpg' bằng đường dẫn đến hình ảnh của bạn */
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        </body>
-
-        h1 {
-            color: white;
-            text-shadow: 2px 2px 4px black;
-        }
-
-        p {
-            color: white;
-            text-shadow: 2px 2px 4px black;
-        }
-    </style>
+    <title>Dữ liệu thùng rác thông minh</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Thùng Rác Thông Minh</h1>
-    <p>Ngày: <span id="date"></span></p>
-    <script>
-        const today = new Date();
-        const dateElement = document.getElementById('date');
-        dateElement.textContent = today.toLocaleDateString();
-    </script>
-</body>
-<body>
-    <footer>
-        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
-        <a href="https://www.youtube.com/@hoangtu8214/" target="_blank"><i class="fab fa-youtube"></i></a>
-    </footer>
-
-    <script src="https://kit.fontawesome.com/de12a34e33.js" crossorigin="anonymous"></script>
+    <div class="container">
+        <div class="header">
+            <h1>Dữ liệu thùng rác thông minh</h1>
+            <div class="time">
+                <span id="currentTime"></span>
+            </div>
+            <button class="logout">Đăng xuất</button>
+        </div>
+        <div class="content">
+            </div>
+        <div class="footer">
+            <p>Email: minhhoang12tn237@gmail.com, SĐT: 0342685774, Địa chỉ: KTX khu B Đông Hòa Dĩ An Bình Dương</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
