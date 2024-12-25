@@ -6,7 +6,7 @@ body {
 .container {
     width: 100%;
     height: 100vh;
-    background-image: url('hinh1.jpg'); /* Thay thế 'your-image.png' bằng đường dẫn hình ảnh của bạn */
+    background-image: url('hinh2.png'); /* Thay thế 'your-image.png' bằng đường dẫn hình ảnh của bạn */
     background-size: cover;
     display: flex;
     flex-direction: column;
