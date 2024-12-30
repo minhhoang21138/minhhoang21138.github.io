@@ -1,25 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-    <title>Dữ liệu thùng rác thông minh</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dữ liệu từ ESP32</title>
+    <style>
+        body {
+            background: linear-gradient(to right, pink, lightyellow); /* Pink to light yellow gradient */
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding-bottom: 60px; /* Space for the scrolling text */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure the body takes at least the full screen height */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            color: #d14b87; /* Soft pink color for the heading */
+            margin-top: 20px;
+        }
+
+        /* Scrolling text section */
+        .scrolling-text-container {
+            width: 100%;
+            overflow: hidden;
+            background-color: #d14b87;
+            padding: 10px 0;
+            margin-top: auto; /* Push the scrolling text to the bottom */
+        }
+
+        .scrolling-text {
+            display: inline-block;
+            white-space: nowrap;
+            animation: scrollText 20s linear infinite;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding-left: 100%; /* Start the text off-screen */
+        }
+
+        /* Keyframe for the scrolling animation */
+        @keyframes scrollText {
+            0% {
+                transform: translateX(100%); /* Start from right side */
+            }
+            100% {
+                transform: translateX(-100%); /* End at left side */
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Dữ liệu thùng rác thông minh</h1>
-            <div class="time">
-                <span id="currentTime"></span>
-            </div>
-            <button class="logout">Đăng xuất</button>
-        </div>
-        <div class="content">
-            </div>
-        <div class="footer">
-              <p>Email: minhhoang12tn237@gmail.com, SĐT: 0342685774, Địa chỉ: KTX khu B Đông Hòa Dĩ An Bình Dương</p>
+    <h1>Dữ liệu từ ESP32</h1>
+    <table>
+        <tr>
+            <th>Thời gian</th>
+            <th>Số lần bấm nút</th>
+            <th>Âm thanh (Base64)</th>
+        </tr>
+    </table>
+
+    <!-- Scrolling Introduction -->
+    <div class="scrolling-text-container">
+        <div class="scrolling-text">
+            Chào mừng đến với hệ thống thu thập dữ liệu từ ESP32! Hãy khám phá và tìm hiểu các thông tin hữu ích mà chúng tôi đã thu thập.
         </div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
-<button class="logout">Đăng xuất</button>
